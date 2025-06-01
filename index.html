@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Marca Interativo - Jeito Arteiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #F8F0E3;
+            color: #7D7C7A;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-dancing {
+            font-family: 'Dancing Script', cursive;
+        }
+        .active-nav {
+            background-color: #C8A1A7;
+            color: #F8F0E3;
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body class="flex">
+
+    <nav class="w-64 h-screen bg-[#F8F0E3] shadow-lg fixed p-5 hidden lg:block">
+        <h2 class="text-2xl font-bold text-[#B08D57] text-center mb-2">Jeito Arteiro</h2>
+        <p class="text-center text-xs text-[#7D7C7A] mb-8 font-dancing">Tecendo Afeto em Cada Detalhe.</p>
+        <ul class="space-y-2" id="desktop-nav">
+            <li><a href="#essencia" class="block py-2 px-4 rounded-lg transition-all duration-300 hover:bg-[#C8A1A7] hover:text-white">A Essência</a></li>
+            <li><a href="#logotipo" class="block py-2 px-4 rounded-lg transition-all duration-300 hover:bg-[#C8A1A7] hover:text-white">Logotipos</a></li>
+            <li><a href="#paleta" class="block py-2 px-4 rounded-lg transition-all duration-300 hover:bg-[#C8A1A7] hover:text-white">Paleta de Cores</a></li>
+            <li><a href="#tipografia" class="block py-2 px-4 rounded-lg transition-all duration-300 hover:bg-[#C8A1A7] hover:text-white">Tipografia</a></li>
+            <li><a href="#aplicacoes" class="block py-2 px-4 rounded-lg transition-all duration-300 hover:bg-[#C8A1A7] hover:text-white">Aplicações</a></li>
+            <li><a href="#guia" class="block py-2 px-4 rounded-lg transition-all duration-300 hover:bg-[#C8A1A7] hover:text-white">Guia Rápido</a></li>
+        </ul>
+    </nav>
+
+    <main class="flex-1 lg:ml-64 p-4 md:p-10">
+
+        <section id="essencia" class="min-h-screen flex flex-col justify-center items-center text-center py-16">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-7xl font-bold text-[#B08D57]">Jeito Arteiro</h1>
+                <h2 class="text-2xl md:text-3xl text-[#C8A1A7] mt-4 font-dancing">A materialização do afeto em forma de arte.</h2>
+                <p class="mt-8 text-lg leading-relaxed">
+                    Bem-vindo ao universo "Jeito Arteiro". Esta seção apresenta a alma da marca. Cada peça é cuidadosamente confeccionada à mão, carregando a elegância do simples, a alegria das cores e o valor inestimável do trabalho manual. A marca busca criar não apenas produtos, mas memórias preciosas, conectando corações através do aconchego familiar e da beleza que reside nos detalhes.
+                </p>
+            </div>
+        </section>
+        
+        <section id="logotipo" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-4">Conceitos de Logotipo</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12">Aqui exploramos cinco propostas de logotipo. Cada uma busca traduzir os valores da marca de uma forma única, sendo versátil para diversas aplicações. Passe o mouse sobre cada conceito para ver sua descrição. A ideia é encontrar o símbolo que melhor represente a união entre o artesanal e a elegância.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group bg-white/50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 aspect-square flex flex-col justify-center items-center text-center">
+                    <div class="w-24 h-24 flex justify-center items-center mb-4 relative">
+                        <div class="w-16 h-16 border-2 border-[#C8A1A7] rounded-full"></div>
+                        <div class="absolute w-8 h-8 bg-[#C8A1A7] rounded-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                        <div class="absolute w-4 h-8 bg-transparent border-l-2 border-r-2 border-b-2 border-[#C8A1A7] rounded-b-full top-0 left-1/2 -translate-x-1/2"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#B08D57]">O Laço Afetivo</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">Um laço estilizado que remete a um novelo ou coração, simbolizando união, carinho e o acabamento manual.</p>
+                </div>
+
+                <div class="group bg-white/50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 aspect-square flex flex-col justify-center items-center text-center">
+                    <div class="w-24 h-24 flex justify-center items-center mb-4 rotate-45">
+                         <div class="w-2 h-16 bg-[#B08D57] rounded-full"></div>
+                         <div class="absolute w-16 h-1 bg-[#C8A1A7] rounded-full"></div>
+                         <div class="absolute top-1/2 left-1/2 w-3 h-3 bg-[#B08D57] rounded-full -translate-x-1/2 -translate-y-1/2 border-2 border-white"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#B08D57]">A Agulha Dourada</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">Uma agulha com uma linha dourada, representando a preciosidade do fazer manual e a "mão de ouro" da artesã.</p>
+                </div>
+
+                <div class="group bg-white/50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 aspect-square flex flex-col justify-center items-center text-center">
+                    <div class="w-24 h-24 flex justify-center items-center mb-4">
+                        <div class="w-24 h-24 border-4 border-[#C8A1A7] rounded-full flex justify-center items-center">
+                            <span class="text-4xl font-bold text-[#B08D57] font-serif">JA</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#B08D57]">O Selo da Artesã</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">Um design que remete a um selo de qualidade ou uma assinatura, conferindo exclusividade e tradição.</p>
+                </div>
+
+                <div class="group bg-white/50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 aspect-square flex flex-col justify-center items-center text-center">
+                     <div class="w-24 h-24 flex justify-center items-center mb-4 relative">
+                        <div class="w-20 h-20 bg-[#C8A1A7] rounded-full"></div>
+                        <div class="absolute w-16 h-10 bg-[#FADCD9] top-4 rounded-full"></div>
+                        <div class="absolute w-4 h-4 bg-[#C8A1A7] rounded-full top-16 left-6"></div>
+                        <div class="absolute w-4 h-4 bg-[#C8A1A7] rounded-full top-16 right-6"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#B08D57]">Silhueta Encantada</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">Uma silhueta sutil e elegante da cabeça de uma boneca, focando na delicadeza e no produto estrela.</p>
+                </div>
+                
+                <div class="group bg-white/50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 aspect-square flex flex-col justify-center items-center text-center">
+                    <div class="w-24 h-24 flex justify-center items-center mb-4 relative">
+                         <div class="w-16 h-16 border-2 border-[#B2C2B3] rounded-full flex justify-center items-center">
+                            <div class="w-8 h-8 bg-[#C8A1A7] rounded-full"></div>
+                         </div>
+                         <div class="absolute w-4 h-4 bg-[#B2C2B3] rounded-full top-1 left-8"></div>
+                         <div class="absolute w-4 h-4 bg-[#B2C2B3] rounded-full bottom-1 right-8"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#B08D57]">Florescer Artesanal</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">Elementos florais sutis entrelaçados com um ícone de botão, transmitindo delicadeza e a beleza que floresce do trabalho manual.</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="paleta" class="py-16 bg-white/50 rounded-xl">
+            <h2 class="text-4xl font-bold text-center mb-4">Paleta de Cores</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12">As cores são a alma da emoção. Esta paleta foi pensada para transmitir elegância, alegria e aconchego. Clique em uma cor para copiar seu código HEX e veja no gráfico como as cores primárias e secundárias se equilibram para criar uma identidade visual harmoniosa e sofisticada.</p>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <div class="text-center color-swatch" data-color="#C8A1A7" data-name="Rosa Antigo">
+                    <div class="w-24 h-24 rounded-full shadow-md cursor-pointer" style="background-color: #C8A1A7;"></div>
+                    <p class="mt-2 font-semibold">Rosa Antigo</p>
+                </div>
+                <div class="text-center color-swatch" data-color="#F8F0E3" data-name="Branco Off-White">
+                    <div class="w-24 h-24 rounded-full shadow-md cursor-pointer border border-gray-200" style="background-color: #F8F0E3;"></div>
+                    <p class="mt-2 font-semibold">Off-White</p>
+                </div>
+                <div class="text-center color-swatch" data-color="#B08D57" data-name="Dourado Queimado">
+                    <div class="w-24 h-24 rounded-full shadow-md cursor-pointer" style="background-color: #B08D57;"></div>
+                    <p class="mt-2 font-semibold">Dourado Queimado</p>
+                </div>
+                <div class="text-center color-swatch" data-color="#B2C2B3" data-name="Verde Sálvia Suave">
+                    <div class="w-24 h-24 rounded-full shadow-md cursor-pointer" style="background-color: #B2C2B3;"></div>
+                    <p class="mt-2 font-semibold">Verde Sálvia</p>
+                </div>
+                <div class="text-center color-swatch" data-color="#FADCD9" data-name="Pêssego Delicado">
+                    <div class="w-24 h-24 rounded-full shadow-md cursor-pointer" style="background-color: #FADCD9;"></div>
+                    <p class="mt-2 font-semibold">Pêssego Delicado</p>
+                </div>
+                <div class="text-center color-swatch" data-color="#7D7C7A" data-name="Cinza Aconchegante">
+                    <div class="w-24 h-24 rounded-full shadow-md cursor-pointer" style="background-color: #7D7C7A;"></div>
+                    <p class="mt-2 font-semibold">Cinza Aconchegante</p>
+                </div>
+            </div>
+            <div id="toast" class="fixed bottom-10 right-10 bg-[#B08D57] text-white py-2 px-5 rounded-lg shadow-xl opacity-0 transition-opacity duration-300">Código copiado!</div>
+            <div class="chart-container">
+                <canvas id="colorChart"></canvas>
+            </div>
+        </section>
+
+        <section id="tipografia" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-4">Tipografia</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12">A escolha das fontes é crucial para a voz da marca. Combinamos uma fonte serifada elegante para títulos, uma sans-serif moderna e legível para textos, e uma cursiva charmosa para detalhes especiais. Essa combinação garante clareza e personalidade.</p>
+            <div class="bg-white/50 p-8 rounded-xl shadow-md">
+                <h1 class="text-5xl mb-4">Isto é um Título Principal</h1>
+                <p class="text-lg mb-6">Este é um parágrafo de corpo de texto, onde a legibilidade é fundamental. A fonte Montserrat foi escolhida por sua clareza e modernidade, proporcionando uma leitura confortável em qualquer dispositivo. Ela serve como a base sólida para comunicar informações sobre os produtos e a história da marca.</p>
+                <p class="text-3xl font-dancing text-[#C8A1A7]">Um toque de charme artesanal.</p>
+            </div>
+        </section>
+
+        <section id="aplicacoes" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-4">Aplicações da Identidade</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12">Veja como a identidade visual ganha vida! Nesta seção, apresentamos mockups interativos que demonstram a aplicação da marca em diferentes contextos, desde as redes sociais até materiais impressos. O objetivo é mostrar a versatilidade e a consistência da identidade visual.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                
+                <div class="bg-white/50 p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold text-center mb-4">Mídias Sociais</h3>
+                    <div class="flex justify-center mb-4 space-x-2">
+                        <button id="post-prod" class="bg-[#C8A1A7] text-white px-4 py-2 rounded-lg text-sm">Produto</button>
+                        <button id="post-frase" class="bg-white text-[#C8A1A7] px-4 py-2 rounded-lg text-sm">Frase</button>
+                        <button id="post-basts" class="bg-white text-[#C8A1A7] px-4 py-2 rounded-lg text-sm">Bastidores</button>
+                    </div>
+                    <div class="w-full max-w-sm mx-auto aspect-square bg-gray-200 rounded-lg p-4 flex flex-col shadow-inner" id="instagram-post">
+                    </div>
+                </div>
+
+                <div class="bg-white/50 p-6 rounded-xl shadow-md space-y-8">
+                    <h3 class="text-2xl font-bold text-center mb-4">Materiais Impressos</h3>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold text-center mb-2">Cartão de Visita</h4>
+                        <div class="w-full max-w-sm mx-auto bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center h-48">
+                            <h3 class="text-3xl text-[#B08D57] font-serif">Jeito Arteiro</h3>
+                            <p class="text-sm font-dancing text-[#C8A1A7]">Por Angela Xavier</p>
+                            <div class="border-t w-1/3 my-2 border-[#B08D57]"></div>
+                            <p class="text-xs">contato@jeitoarteiro.com | @jeitoarteiro</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold text-center mb-2">Cartão de Agradecimento</h4>
+                        <div class="w-full max-w-sm mx-auto bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center h-48" style="background-color: #FADCD9;">
+                             <h3 class="text-xl font-dancing text-white">Feito à mão com carinho para você</h3>
+                             <p class="text-white text-xs mt-4">Obrigado pela sua preferência!</p>
+                             <p class="text-sm font-bold text-white mt-2">Jeito Arteiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guia" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-4">Guia Rápido de Estilo</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12">Para manter a consistência e a força da marca, é essencial seguir algumas diretrizes. Esta seção resume o uso correto do logotipo, cores e fontes, garantindo que a "Jeito Arteiro" seja sempre representada com a mesma elegância e profissionalismo.</p>
+            <div class="bg-white/50 p-8 rounded-xl shadow-md grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Logotipo</h3>
+                    <div class="w-24 h-24 border-4 border-[#C8A1A7] rounded-full flex justify-center items-center mx-auto mb-4">
+                        <span class="text-4xl font-bold text-[#B08D57] font-serif">JA</span>
+                    </div>
+                    <p class="text-sm">Use a versão principal sobre fundos claros. Respeite a área de respiro e não distorça o logotipo.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Cores</h3>
+                    <div class="flex justify-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-[#C8A1A7]"></div>
+                        <div class="w-10 h-10 rounded-full bg-[#B08D57]"></div>
+                        <div class="w-10 h-10 rounded-full bg-[#B2C2B3]"></div>
+                        <div class="w-10 h-10 rounded-full bg-[#FADCD9]"></div>
+                    </div>
+                     <p class="text-sm">Priorize as cores primárias. Use as secundárias para detalhes e fundos, garantindo sempre bom contraste e legibilidade.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Fontes</h3>
+                    <div class="mb-4">
+                        <p class="text-2xl font-serif">Playfair Display</p>
+                        <p class="text-md">Montserrat</p>
+                        <p class="text-lg font-dancing">Dancing Script</p>
+                    </div>
+                    <p class="text-sm">Use as fontes de forma hierárquica para guiar a leitura. Não misture muitas fontes diferentes.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const colorSwatches = document.querySelectorAll('.color-swatch');
+    const toast = document.getElementById('toast');
+    
+    colorSwatches.forEach(swatch => {
+        swatch.addEventListener('click', () => {
+            const color = swatch.dataset.color;
+            navigator.clipboard.writeText(color).then(() => {
+                toast.classList.remove('opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('opacity-0');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        });
+    });
+
+    const ctx = document.getElementById('colorChart').getContext('2d');
+    const colorChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Primárias', 'Secundárias'],
+            datasets: [{
+                label: 'Uso de Cores',
+                data: [3, 3],
+                backgroundColor: [
+                    '#C8A1A7', 
+                    '#B2C2B3'
+                ],
+                borderColor: [
+                    '#F8F0E3',
+                    '#F8F0E3'
+                ],
+                borderWidth: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            label += `${context.raw} cores`;
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    const postProdBtn = document.getElementById('post-prod');
+    const postFraseBtn = document.getElementById('post-frase');
+    const postBastsBtn = document.getElementById('post-basts');
+    const instagramPost = document.getElementById('instagram-post');
+
+    const updatePost = (type) => {
+        postProdBtn.classList.remove('bg-[#C8A1A7]', 'text-white');
+        postFraseBtn.classList.remove('bg-[#C8A1A7]', 'text-white');
+        postBastsBtn.classList.remove('bg-[#C8A1A7]', 'text-white');
+        postProdBtn.classList.add('bg-white', 'text-[#C8A1A7]');
+        postFraseBtn.classList.add('bg-white', 'text-[#C8A1A7]');
+        postBastsBtn.classList.add('bg-white', 'text-[#C8A1A7]');
+
+        let content = '';
+        if (type === 'prod') {
+            postProdBtn.classList.add('bg-[#C8A1A7]', 'text-white');
+            postProdBtn.classList.remove('bg-white', 'text-[#C8A1A7]');
+            content = `
+                <div class="flex-grow flex items-center justify-center">
+                    <div class="w-48 h-48 bg-[#FADCD9] rounded-lg flex items-center justify-center text-white font-bold text-lg font-dancing">Boneca Sofia</div>
+                </div>
+                <div class="text-right text-xs">
+                    <p class="font-bold text-[#B08D57]">Jeito Arteiro</p>
+                    <p>Feito à mão com afeto</p>
+                </div>
+            `;
+        } else if (type === 'frase') {
+            postFraseBtn.classList.add('bg-[#C8A1A7]', 'text-white');
+            postFraseBtn.classList.remove('bg-white', 'text-[#C8A1A7]');
+            content = `
+                <div class="flex-grow flex items-center justify-center text-center p-4" style="background-color: #B2C2B3;">
+                    <h3 class="text-3xl text-white font-dancing">"A vida é a arte de desenhar sem borracha."</h3>
+                </div>
+                <div class="text-center text-xs mt-2">
+                    <p class="font-bold text-[#B08D57]">Jeito Arteiro</p>
+                </div>
+            `;
+        } else {
+            postBastsBtn.classList.add('bg-[#C8A1A7]', 'text-white');
+            postBastsBtn.classList.remove('bg-white', 'text-[#C8A1A7]');
+            content = `
+                <div class="flex-grow flex items-center justify-center" style="background-image: linear-gradient(45deg, #FADCD9 25%, transparent 25%), linear-gradient(-45deg, #FADCD9 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #FADCD9 75%), linear-gradient(-45deg, transparent 75%, #FADCD9 75%); background-size: 20px 20px;">
+                     <div class="bg-white/80 p-4 rounded-lg">
+                        <p class="text-center font-bold">Mãos que criam...</p>
+                        <p class="text-center text-xs">Um pouco do nosso processo.</p>
+                     </div>
+                </div>
+                 <div class="text-right text-xs mt-2">
+                    <p class="font-bold text-[#B08D57]">#Artesanato</p>
+                </div>
+            `;
+        }
+        instagramPost.innerHTML = content;
+    };
+    
+    postProdBtn.addEventListener('click', () => updatePost('prod'));
+    postFraseBtn.addEventListener('click', () => updatePost('frase'));
+    postBastsBtn.addEventListener('click', () => updatePost('basts'));
+    
+    updatePost('prod');
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('#desktop-nav a');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            link.classList.remove('active-nav');
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('active-nav');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+});
+</script>
+</body>
+</html>
